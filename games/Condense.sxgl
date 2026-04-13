@@ -1,0 +1,29 @@
+s0 << md
+s0 << md
+s0 << md
+s0 << md
+s0 << md
+mp << s0
+s1 << mp
+s1 << mp
+s1 << mp
+ TAGLINE: 
+s2 << s2
+ STORY: 
+s3 << s3
+s4 << s2
+s4 << s1
+s4 << s3
+We first add the xent(s4) where s5 is TAGLINE: s1 STORY:
+s4 >> mj
+We give this as a reward to the player
+mp << mj
+We then remove the xent(s5) where s5=s4+s0
+s5 << s4
+s5 << s0
+mj >> s5
+We give this as a reward to the player
+mp << mj
+We finally add the xent(s0) alone to normalized (compute the xed)
+s0 >> mj
+mp << mj
